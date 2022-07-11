@@ -4,11 +4,10 @@ public class Program {
 
   public static void Main(string[] args) {
     int x = 1;
-    int y = 1;
-    while(x <= 10) {
-      Console.WriteLine(x * y);
+    while (x <= 30) {
+      Console.WriteLine(x);
+      if (x % 3 == 0) Console.WriteLine(x + (x - 1) + (x - 2));
       x++;
-      y = -y;
     }
   }
 }
